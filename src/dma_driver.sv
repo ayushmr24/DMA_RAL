@@ -1,3 +1,4 @@
+//driver
 class dma_driver extends uvm_driver #(dma_seq_item);
   `uvm_component_utils(dma_driver)
 
