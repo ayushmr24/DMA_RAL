@@ -1,0 +1,145 @@
+# vsim -c tb 
+# Start time: 12:16:48 on Jan 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: dma_reg_block.sv(26): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(31): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(36): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(41): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(46): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(51): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(56): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(61): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(66): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: dma_reg_block.sv(71): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dma_interfs(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.dma_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test config_dma_test...
+#                   15MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 4294967295 rdata = 0
+#                   15DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 4294967295 rdata = x
+# UVM_INFO reg_sequence.sv(675) @ 35: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER  write des= 0xffffffff mir= 0xffffffff
+# UVM_ERROR: Unable to read value from 'tb.DUT.config_priority'
+#  Either the path is incorrect, or you may not have PLI/ACC visibility to that object.
+# UVM_ERROR: Unable to read value from 'tb.DUT.config_auto_restart'
+#  Either the path is incorrect, or you may not have PLI/ACC visibility to that object.
+# UVM_ERROR: Unable to read value from 'tb.DUT.config_interrupt_enable'
+#  Either the path is incorrect, or you may not have PLI/ACC visibility to that object.
+# UVM_ERROR: Unable to read value from 'tb.DUT.config_burst_size'
+#  Either the path is incorrect, or you may not have PLI/ACC visibility to that object.
+# UVM_ERROR: Unable to read value from 'tb.DUT.config_data_width'
+#  Either the path is incorrect, or you may not have PLI/ACC visibility to that object.
+# UVM_ERROR: Unable to read value from 'tb.DUT.config_descriptor_mode'
+#  Either the path is incorrect, or you may not have PLI/ACC visibility to that object.
+# UVM_INFO reg_sequence.sv(681) @ 55: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER  read des= 0xffffffff mir= 0xffffffff rdata = 0x0
+#                   85DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 511
+#                   85MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 511
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2890) @ 85: reporter [RegModel] Register "reg_model.configer" value read from DUT (0x00000000000001ff) does not match mirrored value (0x00000000ffffffff)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2909) @ 85: reporter [RegModel] Field reserved (reg_model.configer[31:9]) mismatch read=23'h0 mirrored=23'h7fffff 
+#                  105MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 0 rdata = 0
+#                  105DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 0 rdata = x
+# UVM_INFO reg_sequence.sv(687) @ 105: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER  write des= 0x0 mir= 0x0
+#                  135DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 0
+#                  135MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 0
+# UVM_INFO reg_sequence.sv(693) @ 155: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER  read des= 0x0 mir= 0x0 rdata = 0x0
+#                  185DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 0
+#                  185MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 0
+#                  205MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 303379748 rdata = 0
+#                  205DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 303379748 rdata = x
+# UVM_INFO reg_sequence.sv(700) @ 205: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER write des= 0x12153524 mir= 0x12153524
+#                  235DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 292
+#                  235MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 292
+# UVM_INFO reg_sequence.sv(706) @ 255: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER read des= 0x124 mir= 0x124 rdata = 0x124
+#                  285DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 292
+#                  285MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 292
+#                  305MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 3230228097 rdata = 0
+#                  305DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 3230228097 rdata = x
+# UVM_INFO reg_sequence.sv(700) @ 305: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER write des= 0xc0895e81 mir= 0xc0895e81
+#                  335DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 129
+#                  335MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 129
+# UVM_INFO reg_sequence.sv(706) @ 355: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER read des= 0x81 mir= 0x81 rdata = 0x81
+#                  385DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 129
+#                  385MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 129
+#                  405MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 2223298057 rdata = 0
+#                  405DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 2223298057 rdata = x
+# UVM_INFO reg_sequence.sv(700) @ 405: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER write des= 0x8484d609 mir= 0x8484d609
+#                  435DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 9
+#                  435MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 9
+# UVM_INFO reg_sequence.sv(706) @ 455: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER read des= 0x9 mir= 0x9 rdata = 0x9
+#                  485DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 9
+#                  485MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 9
+#                  505MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 2985317987 rdata = 0
+#                  505DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 2985317987 rdata = x
+# UVM_INFO reg_sequence.sv(700) @ 505: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER write des= 0xb1f05663 mir= 0xb1f05663
+#                  535DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 99
+#                  535MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 99
+# UVM_INFO reg_sequence.sv(706) @ 555: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER read des= 0x63 mir= 0x63 rdata = 0x63
+#                  585DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 99
+#                  585MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 99
+#                  605MONITOR wr_en = 1 rd_en = 0 addr = 1060 wdata = 112818957 rdata = 0
+#                  605DRIVER wr_en = 1 rd_en = 0 addr = 1060 wdata = 112818957 rdata = x
+# UVM_INFO reg_sequence.sv(700) @ 605: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER write des= 0x6b97b0d mir= 0x6b97b0d
+#                  635DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 269
+#                  635MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 269
+# UVM_INFO reg_sequence.sv(706) @ 655: uvm_test_top.env.agt.sqr@@seq [config_reg_sequence] CONFIGER read des= 0x10d mir= 0x10d rdata = 0x10d
+#                  685DRIVER wr_en = 0 rd_en = 1 addr = 1060 wdata = x rdata = 269
+#                  685MONITOR wr_en = 0 rd_en = 1 addr = 1060 wdata = 0 rdata = 269
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 685: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   19
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [RegModel]     2
+# [TEST_DONE]     1
+# [config_reg_sequence]    14
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 685 ns  Iteration: 61  Instance: /tb
+# End time: 12:17:07 on Jan 25,2026, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 10
